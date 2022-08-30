@@ -9,5 +9,22 @@
 </head>
 <body>
 	<div id="result"></div>
+
+	<script>
+		var userNumber = prompt("숫자 입력");
+		var displayArea = document.querySelector('#result'); //결과 표시 영역
+
+		if(userNumber != null)
+		{if(userNumber %3 === 0)
+			{displayArea.innerHTML=userNumber + "은 3의 배수";66
+			}
+			else
+			{displayArea.innerHTML=userNumber + "은 3의 배수가 아님";
+
+			}
+		}
+		else { // '취소' 버튼을 클릭했다면
+	alert("입력이 취소됐습니다.");}
+	</script>
 </body>
 </html>
