@@ -45,3 +45,18 @@ function test3() {
   
 }
 //여기서 z를 다시 선언해주면 이번엔 제대로 나옴. 
+
+
+document.write('<br></br>');
+
+test4();
+function test4() { 			
+	document.write("x is " + x );
+  document.write('<br>');
+  document.write("c is " + c );
+  let c = 200;
+}
+// test 2랑 똑같은 구조지만 let을 써서 c가 아예 정의 및 사용이 안됨. 에러남.
+//let은 호이스팅이 없고, 변수 값을 재할당할 수는 있지만 재선언할 수는 없다. 
+
+//const는 재할당 재선언 모두 불가능하다.  
