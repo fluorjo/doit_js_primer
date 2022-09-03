@@ -9,6 +9,19 @@
 </head>
 <body>
 	<h1>짝수끼리 더하기</h1>
+<script>
+	var n =10;
+	var sum=0;
+	
+	for (var i=1; i<=n; i++) {
+		if (i%2==1) { //i가 홀수일 경우 실행.
+			continue;
+		}
+		sum +=i;
 
+		document.write(i+'==============='+sum+'<br>');
+	}
+
+</script>
 </body>
 </html>

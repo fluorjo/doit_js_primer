@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>break문,continue문.</title>
+</head>
+<body>
+	<script>
+		for (i=0; i<10; i++) {
+			document.write('*');
+			document.write('<br><br>');
+			break; //얘 때문에 1개만 출력되고 멈춤. 이 아래 것도 출력 안됨.
+			document.write('-------------------------');
+		}
+	</script>
+	<script>		
+		for (i=0; i<10; i++) {
+			document.write('*');
+			continue; 
+			document.write('-------------'); //continue문 때문에 이 문장은 안 나옴. 위 반복문만 실행하고 끝내나봄.
+				}
+	</script>
+	<script>		
+		document.write('<br><br>');
+		for (i=0; i<10; i++) {
+			document.write('*');
+			continue; }
+			
+			{document.write('이건 나온다'); //continue문은 위에서 중괄호로 닫힌 데서 끝났고 이거는 별도로 실행돼서 나타나나봄.
+				}
+	</script>
+
+</body>
+</html>
