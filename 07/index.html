@@ -4,10 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>To do list</title>
-</head>
+	<link rel="stylesheet" href="css/input.css"> <!--css 불러와서 스타일 적용-->
+</head> 
 <body>
-	<div id="wrapper">
-		
-	</div>    
-</body>
+	<div id="wrapper">   <!--div:텍스트 필드 삽입 공간--> 
+		<h2>여행 준비물 점검 목록</h2>
+		<form>
+			<input type="text" id="item" autofocus="true"> <!--입력용 텍스트 빌드-->
+			<button type="button" id="add" class="addBtn">추가</button><!--버튼 생성-->
+
+		</form>
+	</div id="itemList"></div> <!--준비물 목록이 표시될 영역-->
+</div>    
+<script src="js/checklist.js"></script>
+
+</body> 
 </html>
+
