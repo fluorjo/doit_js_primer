@@ -51,3 +51,66 @@
 	이렇게 하면 accent class인 '게뎁농장'에 밑줄 쳐짐.
 
 -->
+
+<!--
+	getElementsByTagName 함수 = 태그 이름 이용해서 dom 요소에 접근. s 붙는다는 거에 주의.
+	document.getElementsByTagName("id")  
+
+	document.getElementsByTagName("h2")
+HTMLCollection(2) [h2.bright, h2]
+0: h2.bright
+1: h2
+length: 2
+[[Prototype]]: HTMLCollection
+
+-->
+
+<!--
+	document.getElementsByTagName("h2")[0].style.backgroundColor = "#알파벳"
+	h2[0]인 information부분에 배경에 색 칠해짐.
+-->
+
+<!--
+	querySelector, querySelectorAll = id, class, tag 등 아무거나 다 사용해도 되는 함수.
+
+	class 앞에는 마침표 붙임.
+	id 앞에는 # 붙임.
+	tag 앞에는 기호 없이 그냥 태그 이름 쓰면 됨.
+
+	document.querySelector('#container')
+
+-->
+<!--
+	document.querySelector('#heading')
+	<h1 id="heading">에디오피아 게뎁</h1>
+
+	document.querySelectorAll('.accent')
+	NodeList(2) [span.accent, span.accent]       <-앞에 것들과 달리 node라고 나옴.
+	0: span.accent
+	1: span.accent
+	length: 2
+	[[Prototype]]: NodeList
+
+
+	document.querySelectorAll('.accent')[1].style.backgroundColor="yellow"
+	​
+	미리 강조표시돼있던 accent [1]인'SCAA 인증'에 노랑색 배경색 쳐짐.​
+-->
+
+<!--
+	document.querySelector("#prod-img >img").getAttribute("src")
+	=>"images/coffee-pink.jpg"
+
+	
+	">" 이거는 자식 선택자. 문서 안에 이미지가 여러 개일 수 있어서 하나만 찾기 위해 이걸 쓴다.
+
+	getAttribute는 속성에 접근하는 함수. setAttribute는 접근한 속성을 바꾸는 함수.
+
+	document.querySelector("#prod-img >img").setAttribute("src","images/coffee-blue.jpg")
+	=>그림 바뀜.
+
+
+
+
+
+-->
