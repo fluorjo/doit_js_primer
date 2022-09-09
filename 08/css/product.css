@@ -64,7 +64,7 @@
 		}
 		#detail {
 			padding-top:10px;
-			display:none;
+			display:none; /*내용을 가림 이거는 웹 요소에서 그 공간 자체도 사라지게 함. <-> visibility:hidden은 공간은 남아있게 함.*/
 		}
 		#detail li {
 			font-size:0.9em;

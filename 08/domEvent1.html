@@ -1,3 +1,6 @@
+<!--HTML 태그 안에서 직접 이벤트 처리기 추가-->
+<!--dom event1,2 문서 모두 한 요소에 하나의 이벤트 처리기만 연결할 수 있음.-->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,9 +12,9 @@
 </head>
 <body>
 	<div id="container">
-		<img id="pic" src="images/girl.png" alt="" onclick="changePic()">
+		<img id="pic" src="images/girl.png" alt="" onclick="changePic()">  <!--onclick을 html에 넣음--> 
 	</div>
-	<script>		
+	<script> // 자바 스크립트 소스 부분. 		
 		var pic = document.querySelector('#pic');
 		function changePic() {			
 			pic.src = "images/boy.png";

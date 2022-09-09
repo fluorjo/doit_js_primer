@@ -1,3 +1,5 @@
+<!--DOM 요소에 이벤트 처리기 연결하기-->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,7 +15,7 @@
 	</div>
 	<script>		
     var pic = document.querySelector('#pic');
-    pic.onclick = changePic;
+    pic.onclick = changePic; //onclick(이벤트 처리기)을 자바스크립트 소시에서 실행. 
     
 		function changePic() {			
 			pic.src = "images/boy.png";
